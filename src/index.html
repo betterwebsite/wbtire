@@ -1,5 +1,5 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
+title: 'WB Tire and Auto | Home | Oklahoma'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
@@ -74,40 +74,29 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
-            </div>
+<section id="hero-1059">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">WB Tire and Auto Norman, OK</h1>
+            <p class="cs-text">
+                Let us take care of any automotive needs you have!
+            </p>
+            <a href="/contact" class="cs-button-solid">Request Appointment</a>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lift.jpg' | resize({ width: 1000, height:600, position: 'center'}) | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lift.jpg' | resize({ width: 1000, height:600, position: 'center'}) | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/lift.jpg' | resize({ width: 1000, height:600, position: 'center'}) | webp %}" alt="mechanic" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                
 
     <!-- ============================================ -->
     <!--                  Services                    -->
@@ -120,39 +109,42 @@ eleventyNavigation:
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service1.svg"
+                src="/assets/images/brake.svg"
                 alt="appliance"
                 width="48"
-                height="48"/>
+                height="48"
+                style="filter: invert(1);"/>
             </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>Brake Replacement</h2>
+            <p>Professional technicians inspect, diagnose, and install high-quality parts to restore optimal stopping power.</p>
         </div>
         <div class="card">
             <picture>
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service2.svg"
+                src="/assets/images/ac.svg"
                 alt="appliance"
                 width="48"
-                height="48"/>
+                height="48"
+                style="filter: invert(1);"/>
             </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>A/C Repair</h2>
+            <p>Certified technicians ensure proper installation and refrigerant handling for efficient climate control.</p>
         </div>
         <div class="card">
             <picture>
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service3.svg"
+                src="/assets/images/gas.svg"
                 alt="appliance"
                 width="48"
-                height="48"/>
+                height="48"
+                style="filter: invert(1);"/>
             </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>Oil Change</h2>
+            <p>An oil change service replaces old engine oil and filters to keep your vehicle running smoothly and efficiently.</p>
         </div>
     </section>
 
@@ -165,14 +157,14 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lift.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lift.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}">
+                    <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/lift.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="cabinets" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}">
+                    <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="house" loading="lazy" width="400" height="563">
                 </picture>
             </div>
             <!-- Right Content Section-->
@@ -180,12 +172,12 @@ eleventyNavigation:
                 <span class="cs-topper">About Us</span>
                 <h2 class="cs-title">About Company Title</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    WB Tire and Auto, located at 1010 N University Blvd in Norman, OK, offers a comprehensive range of automotive maintenance and repair services. Their experienced technicians handle various vehicle needs to ensure optimal performance and safety.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    WB Tire and Auto in Norman, OK, is a trusted automotive service provider specializing in a full range of vehicle maintenance and repair solutions. From routine oil changes and tire services to complex engine diagnostics and brake repairs, their experienced technicians ensure vehicles run smoothly and safely. They also offer wheel alignments, battery replacements, and A/C repair to maintain optimal performance. Committed to customer satisfaction, WB Tire and Auto provides high-quality service, competitive pricing, and special discounts for first responders and veterans. Whether you need a quick tune-up or major repairs, they are dedicated to keeping your vehicle in top condition.
                 </p>
-                <div class="cs-flex-group">
+                <!-- <div class="cs-flex-group">
                     <p class="cs-flex-p">
                         In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
                     </p>
@@ -199,117 +191,136 @@ eleventyNavigation:
                     alt="gavel"
                     width="136"
                     height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
+                </div> -->
+                <a href="" class="cs-button-solid">More About Us</a>
             </div>
         </div>
     </section>
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
+<section id="services-2279">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Our Comprehensive Automobile Services</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/brake.svg" alt="icon" width="40" height="40">
                 </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
+                <h3 class="cs-h3">Brake Replacement</h3>
+                <p class="cs-item-text">
+                    Professional technicians inspect, diagnose, and install high-quality parts to restore optimal stopping power.
+                </p>
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/brake.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
                 </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/ac.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">A/C Repair</h3>
+                <p class="cs-item-text">
+                    Certified technicians ensure proper installation and refrigerant handling for efficient climate control.
                 </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/lift.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gas.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Oil Change</h3>
+                <p class="cs-item-text">
+                    An oil change service replaces old engine oil and filters to keep your vehicle running smoothly and efficiently.
                 </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/oil.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/align.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Alignment</h3>
+                <p class="cs-item-text">
+                    Proper alignment enhances fuel efficiency, prevents uneven tire wear, and provides a smoother, safer ride.
+                </p>
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/align.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/tire.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Tire/Wheel Change</h3>
+                <p class="cs-item-text">
+                    Tire and wheel change service replaces worn or damaged tires and wheels to ensure safe driving and optimal performance.
+                </p>
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/lift.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/custom.svg" alt="icon" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Custom Requests</h3>
+                <p class="cs-item-text">
+                    Don't see what you need on this list? Give us a call and we will service you!
+                </p>
+                <a href="" class="cs-link">
+                    View More
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg" alt="icon" width="20" height="20">
+                </a>
+                <!--Background Image-->
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/custom.jpg' | resize({ width: 600, height:600, position: 'center'}) | webp %}" alt="construction" width="480" height="425">
+                </picture>
+            </li>
+        </ul>
+    </div>
+    <!--Waves Background-->
+    <picture class="cs-accent">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/brush-strokes.jpg" alt="brush strokes" width="1920" height="331" aria-hidden="true">
+    </picture>
+</section>
+                                
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
 
     <!-- ============================================ -->
     <!--                   Reviews                    -->
@@ -320,7 +331,7 @@ eleventyNavigation:
             <span class="cs-topper">Our Reviews</span>
             <h2 class="cs-title">Words From Our Customers</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+                
             </p>
             <ul class="cs-card-group">
                 <!-- Review 1 -->
@@ -335,11 +346,11 @@ eleventyNavigation:
                     width="80"
                     height="80"/>
                     <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        I was in town visiting my son and doing some minor work on his car and noticed a need for some more major work outside of work I could do due to lack of time and tools.  Called the guys at WB and got a very reasonable quote and they were able to get the work done the next day.  I'm very happy with the quality of work and customer service we received.  Will definitely be back in the future if the need arises.
                     </p>
                     <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
+                        Dan Gramza
+                        <span class="cs-desc">Satisfied Customer</span>
                     </span>
                     <img
                     class="cs-item-stars"
@@ -363,11 +374,11 @@ eleventyNavigation:
                     width="80"
                     height="80"/>
                     <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        This place is clean that people are kind and informative the ownership is outstanding. Prices are very reasonable and they're done with a quality job at a quality price I would do 5 + Stars highly recommend
                     </p>
                     <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
+                        Jennifer Musial
+                        <span class="cs-desc">Satisfied Customer</span>
                     </span>
                     <img
                     class="cs-item-stars"
@@ -380,7 +391,7 @@ eleventyNavigation:
                     height="16"/>
                 </li>
             </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+            <a target="_blank" aria-label="read more reviews" href="https://www.google.com/search?q=WB+Tire+and+Auto+LLC&oq=WB+Tire+and+Auto+LLC&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MhAIARAuGK8BGMcBGIAEGI4FMgYIAhBFGEAyBwgDEAAYgAQyCAgEEAAYFhgeMgoIBRAAGIAEGKIEMgoIBhAAGIAEGKIEMgoIBxAAGIAEGKIE0gEHNjM5ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8#lrd=0x87b26999ba3d622f:0x25424c1020dd3afa,1,,,," class="cs-button-solid">Our Reviews</a>
         </div>
     </section>
 
