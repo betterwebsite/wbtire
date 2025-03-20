@@ -1,7 +1,7 @@
 ---
 title: 'WB Tire and Auto | Home | Oklahoma'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
+preloadImg: ''
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -70,6 +70,8 @@ eleventyNavigation:
             {% endif %}
         }
     </script>
+
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/lift.jpg' | resize({ width: 1000, height:600, position: 'center'}) | webp %}"/>
 {% endblock %}
 
 {% block body %}
